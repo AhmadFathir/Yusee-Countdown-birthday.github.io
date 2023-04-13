@@ -16,7 +16,10 @@ html, body {
 
 body {
 	align-items: center;
-	background-color: #1d913f;
+	background: linear-gradient(-45deg, #429936, #17ac09, #14d163, #138630);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
 	display: flex;
 	font-family: -apple-system, 
 	BlinkMacSystemFont, 
@@ -66,11 +69,6 @@ li span {
 	text-align: center;
 }
 
-.button a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: #111;
-}
 
 @media all and (max-width: 768px) {
 	h1 {
@@ -84,10 +82,18 @@ li span {
 	li span {
 	  font-size: calc(3.375rem * var(--smaller));
 	}
+}
 
-	.button a{
-        font-size: .5rem;
-    }
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 img{

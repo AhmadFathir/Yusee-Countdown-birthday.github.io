@@ -33,7 +33,10 @@
   
 		  //do something later when date is reached
 		  if (distance < 0) {
-			document.getElementById("headline").innerText = "It's yusee birthday! 🥳🤩";
+			alert("HAPPY BIRTHDAY YUS")
+			alert("SORRY KALO UCAPAN ULTAHNYA MASIH KURANG HAHAHA")
+			alert("JANGKO PERNAH LUPA, KALO BANYAK ORANG YANG NANTIKAN SENYUMMU")
+			document.getElementById("headline").innerText = "HAPPY BIRTHDAY YUSS, WE ALL LOVE U! 🥳🤩";
 			document.getElementById("countdown").style.display = "none";
 			document.getElementById("content").style.display = "block";
 			clearInterval(x);
